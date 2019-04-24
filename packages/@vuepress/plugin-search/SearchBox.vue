@@ -122,7 +122,6 @@ export default {
           for (let j = 0; j < p.headers.length; j++) {
             if (res.length >= max) break
             const h = p.headers[j]
-            console.log(h);
             if (h.title && matches(p,h.title)) {
               res.push(Object.assign({}, p, {
                 path: p.path + '#' + h.slug,
